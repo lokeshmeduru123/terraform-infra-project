@@ -27,5 +27,5 @@ variable "database_subnet_cidrs" {
 }
 
 variable "is_peering_required" {
-  default = true
+  default = false # If multiple vpc need to be communicated we need to give true here this project has only 1-vpc
 }
