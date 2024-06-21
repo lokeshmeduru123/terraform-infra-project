@@ -7,7 +7,7 @@ terraform {
   }
   backend "s3" {
     bucket = "devops-project.site-state"
-    key    = "expense-dev-sg"
+    key    = "expense-dev-basian"
     region = "us-east-1"
     dynamodb_table = "devops-project.site-state-locking"
   }
