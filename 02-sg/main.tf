@@ -1,5 +1,6 @@
 module "db" {
-  source = "../../terraform-aws-securitygroup"
+  #source = "../../terraform-aws-securitygroup"
+  source = "git::https://github.com/lokeshmeduru123/Terraform-AWS-SG-module.git?ref=main"
   project_name = var.project_name
   environment = var.environment
   sg_description = "SG for DB MySQL Instances"
@@ -9,7 +10,8 @@ module "db" {
 }
 
 module "backend" {
-  source = "../../terraform-aws-securitygroup"
+  #source = "../../terraform-aws-securitygroup"
+  source = "git::https://github.com/lokeshmeduru123/Terraform-AWS-SG-module.git?ref=main"
   project_name = var.project_name
   environment = var.environment
   sg_description = "SG for Backend Instances"
@@ -19,7 +21,8 @@ module "backend" {
 }
 
 module "app_alb" {
-  source = "../../terraform-aws-securitygroup"
+  #source = "../../terraform-aws-securitygroup"
+  source = "git::https://github.com/lokeshmeduru123/Terraform-AWS-SG-module.git?ref=main"
   project_name = var.project_name
   environment = var.environment
   sg_description = "SG for APP ALB Instances"
@@ -30,7 +33,8 @@ module "app_alb" {
 
 
 module "frontend" {
-  source = "../../terraform-aws-securitygroup"
+  #source = "../../terraform-aws-securitygroup"
+  source = "git::https://github.com/lokeshmeduru123/Terraform-AWS-SG-module.git?ref=main"
   project_name = var.project_name
   environment = var.environment
   sg_description = "SG for Frontend Instances"
@@ -40,7 +44,8 @@ module "frontend" {
 }
 
 module "web_alb" {
-  source = "../../terraform-aws-securitygroup"
+  #source = "../../terraform-aws-securitygroup"
+  source = "git::https://github.com/lokeshmeduru123/Terraform-AWS-SG-module.git?ref=main"
   project_name = var.project_name
   environment = var.environment
   sg_description = "SG for Web ALB Instances"
@@ -50,7 +55,8 @@ module "web_alb" {
 }
 
 module "bastion" {
-  source = "../../terraform-aws-securitygroup"
+  #source = "../../terraform-aws-securitygroup"
+  source = "git::https://github.com/lokeshmeduru123/Terraform-AWS-SG-module.git?ref=main"
   project_name = var.project_name
   environment = var.environment
   sg_description = "SG for Bastion Instances"
@@ -60,7 +66,8 @@ module "bastion" {
 }
 
 module "vpn" {
-  source = "../../terraform-aws-securitygroup"
+  #source = "../../terraform-aws-securitygroup"
+  source = "git::https://github.com/lokeshmeduru123/Terraform-AWS-SG-module.git?ref=main"
   project_name = var.project_name
   environment = var.environment
   sg_description = "SG for VPN Instances"
