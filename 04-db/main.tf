@@ -1,5 +1,5 @@
 module "db" {
-  source = "terraform-aws-modules/rds/aws"
+  source = "terraform-aws-modules/rds/aws"  #default modules from terraform
   identifier = "${var.project_name}-${var.environment}" #expense-dev
 
   engine            = "mysql"
