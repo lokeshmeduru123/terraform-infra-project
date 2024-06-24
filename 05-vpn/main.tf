@@ -5,6 +5,7 @@ resource "aws_key_pair" "vpn" {
   #public_key = file("~/.ssh/vpn.pub")
   public_key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIDPGqUtXHkby+ZP01styUfuTmgTuq9t2xBfdEdsrKnEy lokes@DESKTOP-ALATB33"
   # ~ means windows home directory
+  #create your own public key and replace here #ssh-keygen -f openvpn
 }
 
 
